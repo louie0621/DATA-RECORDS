@@ -98,8 +98,8 @@ class DatarecordController extends Controller
      */
     public function delete(Request $request)
     {
-        $dataaaa = Datarecord::find($request->id)->delete();
+        $data = Datarecord::find($request->id)->delete();
         
-        return response()->json($dataaaa);
+        return response()->json($data);
     }
 }
